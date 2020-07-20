@@ -31,7 +31,7 @@ const App = () => {
     <Provider>
       <StatusBar barStyle="light-content" />
       <Routes>
-        {/* <Stack.Screen name="Home" component={Home} /> */}
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Game" component={Game} options={{ gestureEnabled: false }} />
       </Routes>
     </Provider>

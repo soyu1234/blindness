@@ -6,7 +6,7 @@ import styles from "./styles";
 import Action from "../../state";
 import { Store } from "../../state/Provider";
 
-export default ({navigation}) => {
+export default ({ navigation }) => {
   const { container } = styles;
   const handlePlay = () => {
     navigation.navigate("Game");
@@ -16,10 +16,10 @@ export default ({navigation}) => {
   };
   return (
     <View style={container}>
-      {/* <Header /> */}
-      {/* <Play handlePlay={handlePlay} /> */}
-      {/* <HighScore /> */}
-      {/* <Leaderboard/> */}
+      <Header />
+      <Play handlePlay={handlePlay} />
+      <HighScore />
+      <Leaderboard />
       <Copyright handleSound={handleSound} />
     </View>
   );
